@@ -1,0 +1,491 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", "Oswald", serif;
+    font-weight: 600;
+}
+
+body {
+    background: #000;
+    min-height: 100dvh;
+    color: #fff;
+    
+    .gradient {
+        position: absolute;
+        background: transparent;
+        box-shadow: 0px 0px 100px #eee;
+        top: -20px;
+        left: -59px;
+        width: 2000px;
+        height: 20px;
+    }
+}
+.interface {
+    display: flex;
+    padding-top: 25px;
+    justify-content: center;
+    align-items: center;
+    
+    
+    .avatar {
+        display: flex;
+        z-index: 100;
+        align-items: center;
+        text-align: center;
+        background: #222222;
+        box-shadow: 0px 0px 8px #fff;
+        height: 150px;
+        width: 150px;
+        border-radius: 100%;
+        
+        p {
+            font-size: 23px;
+            text-shadow: 1px 1px 2px #fff;
+        }
+    }
+}
+
+.texts {
+    margin: 35px 10px 0px 10px;
+    align-items: center;
+    
+    .texts-slogan {
+        align-items: center;
+        
+        p {
+            margin-top: 20px;
+            text-align: center;
+            color: #888;
+            font-size: 12px;
+        }
+        
+        h1 {
+            text-align: center;
+            font-size: 28px;
+        }
+    }
+}
+
+.social-media {
+    margin-top: 25px;
+    
+    .email {
+        margin-top: 30px;
+        text-align: center;
+        
+        p {
+            margin-bottom: 9px;
+        }
+        
+        .button button {
+            margin-bottom: 20px;
+            cursor: pointer;
+            -webkit-tap-highlight-color: transparent;
+            color: #555;
+            padding: 12px 30px;
+            border: 1px solid #333;
+            border-radius: 40px;
+            background: #999;
+            box-shadow: none;
+            transition: 0.2s ease;
+        }
+        
+        .button button:hover {
+           /* box-shadow: 0px 0px 10px #fff;
+            background: #888; */
+        }
+        
+        .place-email {
+            box-shadow: none;
+            
+            input {
+              margin-bottom: 20px;
+              width: 75%;
+              background-color: transparent;
+              color: #fff;
+              border: 1px solid #888;
+              padding: 5px;
+              border-radius: 6px;
+              outline: none;
+              transition: 0.2s ease;
+            }
+            
+            input::placeholder {
+              color: #888;
+            }
+            
+            input:focus {
+              border-color: #00A8FF;
+              box-shadow: 0 0 8px #00A8FF;
+            }
+        }
+    }
+    
+    ul {
+        margin-left: 45px;
+        margin-right: 45px;
+        text-decoration: none;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        
+        li {
+            justify-content: space-between;
+            
+            a {
+                color: #00A8FF;
+                text-decoration: none;
+                transition: 0.3s ease;
+            }
+            
+            a:hover {
+                font-size: 16.5px;
+                color: #66CFFF;
+            }
+        }
+    }
+}
+
+.projects, .function, .sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 19px;
+    
+    border: 2px solid #444;
+    border-radius: 8px;
+    background: linear-gradient(120deg, #000000, #303030, #000000 99%);
+    
+    h1 {
+        margin-top: 27px;
+    }
+    
+    .wait {
+        color: #777;
+        text-decoration: underline;
+    }
+    
+    p {
+        margin: 19px;
+    }
+    
+    #project_1, #project_2, #project_3, #project_4, #project_5, #project_6 {
+        z-index: 100;
+        
+        display: flex;
+        flex-direction: column;
+        font-size: 18px;
+        margin: 20px 0px;
+        padding: 15px 25px;
+        border-radius: 13px;
+        background-color: transparent;
+        
+        .legend {
+            font-size: 8px;
+            
+            border-left: 3px solid #888;
+            
+            border-top-left-radius: 0.2rem;
+            border-bottom-left-radius: 0.2rem;
+            
+            padding-left: 10px;
+        }
+        
+        img {
+            align-self: center;
+            height: 330px;
+            width: 200px;
+            border-radius: 30px;
+            transition: 0.25s ease;
+            opacity: 0.9;
+            margin: 20px 2px;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #00A8FF;
+            transition: .2s ease;
+        }
+        
+        a:hover {
+            color: #00A8FFA8;
+            font-size: 19px;
+        }
+        
+        hr {
+            border: 1px solid #999;
+        }
+        
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            list-style: none;
+            color: #999;
+            
+            padding: 6px 5px;
+            
+            gap: 20px;
+            
+            li {
+                background: #222;
+                
+                padding: 1px 10px;
+                border: 1px solid #414141;
+                border-radius: 2rem;
+                position: relative;
+                
+                animation: listAnimationNormal 0.2s ease-in-out forwards;
+                
+                transition: 0.4s ease;
+            }
+            
+            li:hover {
+                animation: listAnimation 0.4s ease-in-out forwards;
+                
+                box-shadow: 2px 2px 0px #888;
+            }
+        }
+    } /* FIM PROJECTS */
+}
+
+footer {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    
+    font-size: 6pt;
+    padding: 10px 5px;
+}
+
+@keyframes listAnimation {
+    0% {
+        top: 0px;
+        left: 0px;
+    }
+
+    100% {
+        top: -1.8px;
+        left: -1.8px;
+    }
+}
+
+@keyframes listAnimationNormal {
+    0% {
+        top: -1.8px;
+        left: -1.8px;
+    }
+    
+    100% {
+        top: 0px;
+        left: 0px;
+    }
+}
+
+@media (min-width: 1000px) {
+            .interface .avatar {
+                height: 300px;
+                width: 300px;
+                
+                display: flex;
+                z-index: 100;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                background: #222222;
+                box-shadow: 0px 0px 12px #fff;
+                
+                transition: 0.6s ease;
+                
+                p {
+                    font-size: 40px;
+                }
+            }
+            
+            .avatar {
+                cursor: pointer;
+                -webkit-tap-highlight-color: transparent;
+            }
+            
+            #in-box {
+                position: relative;
+                right: -50px;
+            }
+            
+    .box-nav {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+            
+    .texts {
+        
+        .texts-slogan {
+            h1 {
+                font-size: 39px;
+            }
+            
+            p {
+                font-size: 19px;
+            }
+        }
+    }
+    
+    .sobre {
+        padding: 1px 30px;
+        width: 680px;
+        height: 730px;
+        
+        justify-self: center;
+        
+        h1 {
+            font-size: 39px;
+        }
+        
+        p {
+            font-size: 25px;
+        }
+    }
+    
+    .box-nav {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        
+        .projects:hover {
+            transform: translateY(-20px);
+            box-shadow: 0px 0px 29px 5px #00FFD7;
+        }
+        
+        .sobre:hover {
+            transform: translateY(-20px);
+            box-shadow: 0px 0px 29px 5px #00FFD7;
+        }
+        
+        .function:hover {
+            transform: translateY(-20px);
+            box-shadow: 0px 0px 29px 5px #00FFD7;
+        }
+    }
+    
+    .projects, .function, .sobre {
+        position: relative;
+        transition: all 0.2s ease;
+        
+        justify-self:  center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: center;
+        padding: 1px 30px;
+        
+        margin-top: 90px;
+        
+        h1 {
+            font-size: 59px;
+        }
+        
+        p {
+            font-size: 29px;
+        }
+        
+        #project_1, #project_2, #project_3, #project_4, #project_5, #project_6 {
+            font-size: 27px;
+            
+            .legend {
+                font-size: 19px;
+            }
+            
+            a:hover {
+                font-size: 25px;
+            }
+            
+            h2 {
+                font-size: 39px;
+            }
+            
+            img {
+                margin: 50px 0px;
+                scale: 1.18;
+            }
+        }
+    }
+    
+    .function, .sobre {
+        height: 760px;
+        width: 690px;
+    }
+    
+    .projects {
+        width: 640px;
+    }
+    
+    .social-media {
+        font-size: 24px;
+        
+        padding: 0px 300px;
+        
+        .email {
+            font-size: 39px;
+            
+            justify-content: column;
+            
+            display: flex;
+            flex-direction: column;
+            
+            .place-email {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .button button {
+                scale: 1.28;
+                font-size: 20px;
+            }
+            
+            .button button:hover {
+                box-shadow: 0px 0px 10px #fff;
+                background: #888
+            }
+        }
+        
+        .email .place-email input {
+            width: 860px;
+            height:58px;
+            font-size: 31px;
+        }
+        
+        ul {
+            gap: 50px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            
+            li {
+                text-align: center;
+                
+                a {
+                    font-size: 27px;
+                    text-align: center;
+                }
+                
+                a:hover {
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+    
+    footer {
+        font-size: 17px;
+        color: #aaa;
+    }
+}
