@@ -172,7 +172,7 @@ body {
         margin: 19px;
     }
     
-    #project_1, #project_2, #project_3, #project_4, #project_5, #project_6 {
+    #project_1, #project_2, #project_3, #project_4, #project_5, #project_6, #project_7 {
         z-index: 100;
         
         display: flex;
@@ -395,7 +395,7 @@ footer {
             font-size: 29px;
         }
         
-        #project_1, #project_2, #project_3, #project_4, #project_5, #project_6 {
+        #project_1, #project_2, #project_3, #project_4, #project_5, #project_6, #project_7 {
             font-size: 27px;
             
             .legend {
